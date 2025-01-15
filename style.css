@@ -2,7 +2,7 @@
 @media only screen and (min-width: 1200px) {
 
 }
-* {
+*,::after,::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -297,4 +297,31 @@ button:hover {
   background-color: #c44a15;
   color:black;
   outline: none;
+}
+/* Responsive Media Queries Style start */
+.hide {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .link-container {
+    display: none;
+  }
+  .hero-section {
+    height: 100%;
+  }
+  .hero-offer {
+    width: 100%;
+  }
+  .hero-offer p {
+    width: 100%;
+  }
+  .survice-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer_box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .social_ad {
+    display: none;
+  }
 }
